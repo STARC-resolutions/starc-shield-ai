@@ -74,3 +74,24 @@ The S.T.A.R.C. Shield model itself is encrypted to prevent "Adversarial Machine 
 
 4.2 Performance
 The system shall process a minimum of 10,000 packets per second on a standard quad-core CPU.
+
+5. System Design & Architecture
+5.1 Data Flow Diagram (DFD) - Level 0
+Source: Network Packet Stream / CSV Log.
+
+Process: S.T.A.R.C. Shield Detection Engine.
+
+Sink: Admin Alert Dashboard / Log File.
+
+5.2 System Flowchart Logic
+Start: System initializes and loads the pre-trained .pkl model.
+
+Input: Reads the latest network traffic row.
+
+Preprocessing: Normalizes the numerical values (StandardScaler).
+
+Classification: The Random Forest model predicts if the row is Benign or Malicious.
+
+Condition: If Malicious, trigger the S.T.A.R.C. Alert Protocol.
+
+End: Append result to history and loop to next packet.
