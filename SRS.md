@@ -95,3 +95,11 @@ Classification: The Random Forest model predicts if the row is Benign or Malicio
 Condition: If Malicious, trigger the S.T.A.R.C. Alert Protocol.
 
 End: Append result to history and loop to next packet.
+
+## 6. Conclusion
+The **S.T.A.R.C. Shield** project demonstrates that Artificial Intelligence is no longer an option, but a necessity in modern Cyber Security. By utilizing Random Forest classification, we have achieved a high-fidelity detection rate for network anomalies, providing a robust baseline for further research in automated threat hunting.
+
+## 7. References & Bibliography
+1.  **L. J. Garcia,** "Machine Learning for Network Intrusion Detection," *IEEE Communications Surveys & Tutorials*, 2024.
+2.  **S.T.A.R.C. Resolutions Internal Whitepaper,** "Heuristic Analysis of Zero-Day Vectors," 2026.
+3.  **Python Scikit-Learn Documentation,** "Ensemble Methods: Random Forests," v1.4.
