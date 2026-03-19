@@ -15,3 +15,5 @@ In an era of polymorphic threats, signature-based detection is insufficient. **S
 1. Clone the repository: `git clone https://github.com/STARC-resolutions/starc-shield-ai.git`
 2. Install dependencies: `pip install pandas scikit-learn`
 3. Run the engine: `python starc_shield.py`
+
+[Download/View Full Project Documentation (SRS)](./SRS.md)
